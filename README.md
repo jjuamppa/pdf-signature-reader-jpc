@@ -57,7 +57,7 @@ const readFile = (e) => {
 * authenticity: Indicates if the validity of the certificate chain and the root CA (overall in case of multiple signatures).
 * integrity: Indicates if the pdf has been tampered with or not (overall in case of multiple signatures).
 * expired: Indicates if any of the certificates has expired.
-* signatures: Array that contains the certificate details and signatureMeta (Reason, ContactInfo, Location and Name) for each signature.
+* signatures: Array that contains the certificate details and signatureMeta (Reason, ContactInfo, Date, Location and Name) for each signature.
 
 ## Certificates
 

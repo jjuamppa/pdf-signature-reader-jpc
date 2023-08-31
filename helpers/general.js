@@ -47,6 +47,9 @@ const getSignatureMeta = (signedData) => {
     contactInfo: getMetaRegexMatch('ContactInfo')(str),
     location: getMetaRegexMatch('Location')(str),
     name: getMetaRegexMatch('Name')(str),
+    date: getMetaRegexMatch('Date')(str),
+    date2: getMetaRegexMatch('MetadataDate')(str),
+    date3: getMetaRegexMatch('ModifyDate')(str),
   });
 };
 
