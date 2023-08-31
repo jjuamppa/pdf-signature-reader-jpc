@@ -1,11 +1,11 @@
 ## Verifying PDF signature
 
-The signed PDF file has the public certificate embedded in it, so all we need to verify a PDF file is the file itself. This package is a clone from [ninja-labs-tech/verify-pdf](https://github.com/ninja-labs-tech/verify-pdf) with update on dependencies, cause we got issue when installing the package with node >= 16 & npm >= 8
+The signed PDF file has the public certificate embedded in it, so all we need to verify a PDF file is the file itself. This package is a clone from [ninja-labs-tech/verify-pdf](https://github.com/ninja-labs-tech/verify-pdf) with a modification in the file extractSignature
 
 ## Installation
 
 ```
-npm i pdf-signature-reader
+npm i pdf-signature-reader-jpc
 ```
 
 ## Importing
