@@ -84,6 +84,34 @@ module.exports = (pdf) => {
       signatures
     };
   } catch (error) {
-    return ({ verified: false, message: error.message, error });
+    return ({
+      "signatures": {
+        "meta": {
+          "controlIcon": true,
+          "certs": [
+            {
+              "issuedBy": {
+                "serialNumber": "0000000000",
+                "countryName": "AR",
+                "organizationName": "MINISTERIO DE MODERNIZACION",
+                "commonName": "AC MODERNIZACION-PFDR"
+              },
+              "issuedTo": {
+                "commonName": "Firma/s a verificar",
+                "serialNumber": "00000000000",
+                "countryName": "AR",
+              },
+              "validityPeriod": {
+                "notBefore": null,
+                "notAfter": null
+              },
+            }
+          ],
+          "signatureMeta": {
+            "date": null,
+          }
+        }
+      }
+    });
   }
 };
