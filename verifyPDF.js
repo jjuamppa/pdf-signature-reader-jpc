@@ -85,33 +85,35 @@ module.exports = (pdf) => {
     };
   } catch (error) {
     return ({
-      "signatures": {
-        "meta": {
-          "controlIcon": true,
-          "certs": [
-            {
-              "issuedBy": {
-                "serialNumber": "0000000000",
-                "countryName": "AR",
-                "organizationName": "MINISTERIO DE MODERNIZACION",
-                "commonName": "AC MODERNIZACION-PFDR"
-              },
-              "issuedTo": {
-                "commonName": "Firma/s a verificar",
-                "serialNumber": "00000000000",
-                "countryName": "AR",
-              },
-              "validityPeriod": {
-                "notBefore": null,
-                "notAfter": null
-              },
+      "signatures": [
+        {
+          "meta": {
+            "controlIcon": true,
+            "certs": [
+              {
+                "issuedBy": {
+                  "serialNumber": "0000000000",
+                  "countryName": "AR",
+                  "organizationName": "MINISTERIO DE MODERNIZACION",
+                  "commonName": "AC MODERNIZACION-PFDR"
+                },
+                "issuedTo": {
+                  "commonName": "Firma/s a verificar",
+                  "serialNumber": "00000000000",
+                  "countryName": "AR",
+                },
+                "validityPeriod": {
+                  "notBefore": null,
+                  "notAfter": null
+                },
+              }
+            ],
+            "signatureMeta": {
+              "date": null,
             }
-          ],
-          "signatureMeta": {
-            "date": null,
           }
         }
-      }
+      ]
     });
   }
 };
